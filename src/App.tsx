@@ -60,16 +60,22 @@ const App: Component = () => {
                             boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
                             transition: "transform 0.2s",
                           }}>
-                            <img
-                              src={`/${item.logo}`}
-                              alt={item.name}
-                              style={{
-                                maxHeight: "50px",
-                                maxWidth: "100%",
-                                marginBottom: "0.75rem",
-                                objectFit: "contain"
-                              }}
-                            />
+                          <img
+                          src={item.logo}
+                          alt={item.name}
+                          style={{
+                            maxHeight: "60px",
+                            maxWidth: "120px",
+                            objectFit: "contain",
+                            verticalAlign: "middle",
+                            marginRight: "10px",
+                            background: "white",
+                            padding: "5px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px"
+                          }}
+                        />
+                            
                             <div>
                               <a
                                 href={item.homepage_url}
