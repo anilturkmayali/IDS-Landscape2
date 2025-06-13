@@ -5,104 +5,56 @@ const App: Component = () => {
   const [landscape] = createResource(loadLandscape);
 
   return (
-    <main
-      style={{
-        fontFamily: "'Segoe UI', sans-serif",
-        background: "#f8fafc",
-        padding: "2rem",
-        color: "#333"
-      }}
-    >
-      <header style={{ textAlign: "center", marginBottom: "3rem" }}>
+    <main class="container py-5">
+      {/* Header */}
+      <header class="text-center mb-5">
         <img
           src="/hosted_logos/idsa.svg"
           alt="IDSA Logo"
-          style={{
-            height: "48px",
-            objectFit: "contain",
-            marginBottom: "1rem"
-          }}
+          class="mb-3"
+          style={{ height: "40px", objectFit: "contain" }}
         />
-        <h1 style={{ fontSize: "2.4rem" }}>IDSA Landscape</h1>
-        <p style={{ fontSize: "1rem", color: "#555" }}>
+        <h1 class="display-4">IDSA Landscape</h1>
+        <p class="lead text-muted">
           CNCF-style directory of data space technologies and organizations
         </p>
       </header>
 
+      {/* Dynamic Sections */}
       <Show when={landscape()}>
-        <For each={landscape()?.landscape}>
-          {(category: any) => (
-            <section style={{ marginBottom: "3rem" }}>
-              <h2
-                style={{
-                  fontSize: "1.8rem",
-                  color: "#0b4f6c",
-                  marginBottom: "1rem"
-                }}
-              >
-                {category.name}
-              </h2>
+        <For each={landscape()!.landscape}>
+          {(cat: any) => (
+            <section class="mb-5">
+              <h2 class="h3 text-primary mb-4">{cat.name}</h2>
 
-              <For each={category.subcategories}>
+              <For each={cat.subcategories}>
                 {(sub: any) => (
-                  <div style={{ marginBottom: "2rem" }}>
-                    <h3
-                      style={{
-                        fontSize: "1.3rem",
-                        color: "#1c6ea4",
-                        marginBottom: "1rem"
-                      }}
-                    >
-                      {sub.name}
-                    </h3>
+                  <div class="mb-4">
+                    <h3 class="h5 text-info mb-3">{sub.name}</h3>
 
-                    <div
-                      style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
-                        gap: "1.2rem"
-                      }}
-                    >
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                       <For each={sub.items}>
                         {(item: any) => (
-                          <div
-                            style={{
-                              backgroundColor: "#fff",
-                              borderRadius: "8px",
-                              padding: "1rem",
-                              textAlign: "center",
-                              boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
-                              transition: "transform 0.2s",
-                              border: "1px solid #e5e7eb"
-                            }}
-                          >
-                            <img
-                              src={item.logo}
-                              alt={item.name}
-                              style={{
-                                height: "40px",
-                                width: "auto",
-                                marginBottom: "10px",
-                                objectFit: "contain"
-                              }}
-                            />
-
-                            <div>
-                              <a
-                                href={item.homepage_url}
-                                target="_blank"
-                                rel="noreferrer"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "#0b4f6c",
-                                  fontWeight: "600",
-                                  fontSize: "0.95rem",
-                                  display: "block",
-                                  marginTop: "0.5rem"
-                                }}
-                              >
-                                {item.name}
-                              </a>
+                          <div class="col">
+                            <div class="card h-100 border-0 shadow-sm position-relative">
+                              <div class="card-body text-center">
+                                <img
+                                  src={`/${item.logo}`}
+                                  alt={item.name}
+                                  class="img-fluid mb-2"
+                                  style={{ maxHeight: "48px" }}
+                                />
+                                <h6 class="card-title">
+                                  <a
+                                    href={item.homepage_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="stretched-link text-decoration-none text-dark"
+                                  >
+                                    {item.name}
+                                  </a>
+                                </h6>
+                              </div>
                             </div>
                           </div>
                         )}
