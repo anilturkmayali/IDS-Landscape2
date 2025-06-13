@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "build": "npm run export",
     "export": "next export",
     "start": "next start",
-    "analyze": "BUNDLE_ANALYZE=true next build",
-    "prepare": "husky install"
+    "dev": "next dev"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
