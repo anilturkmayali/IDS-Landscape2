@@ -1,8 +1,9 @@
 import solid from "vite-plugin-solid";
+import { defineConfig } from "vite";
 
-export default {
+export default defineConfig({
   plugins: [solid()],
   build: {
-    outDir: "build",
-  }
-};
+    outDir: "dist", // ✅ match this to Netlify
+  },
+});
