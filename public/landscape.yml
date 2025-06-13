@@ -1,25 +1,155 @@
 landscape:
-  - name: Connectors
+  - name: Projects and products
     subcategories:
-      - name: Certified
+      - name: Application Definition & Image Build
         items:
-          - name: TNO Connector
-            homepage_url: https://www.tno.nl
+          - name: Dapr
+            homepage_url: https://dapr.io/
             logo: hosted_logos/idsa.svg
-            description: Certified connector by TNO.
-          - name: Fraunhofer Connector
-            homepage_url: https://www.fraunhofer.de
+          - name: Helm
+            homepage_url: https://helm.sh/
             logo: hosted_logos/idsa.svg
-            description: Production-ready connector.
-  - name: Participants
-    subcategories:
-      - name: Founding Members
+          - name: Artifact Hub
+            homepage_url: https://artifacthub.io/
+            logo: hosted_logos/idsa.svg
+          - name: Backstage
+            homepage_url: https://backstage.io/
+            logo: hosted_logos/idsa.svg
+          - name: Buildpacks.io
+            homepage_url: https://buildpacks.io/
+            logo: hosted_logos/idsa.svg
+          - name: KubeVela
+            homepage_url: https://kubevela.io/
+            logo: hosted_logos/idsa.svg
+          - name: Carvel
+            homepage_url: https://carvel.dev/
+            logo: hosted_logos/idsa.svg
+          - name: Kustomize
+            homepage_url: https://kustomize.io/
+            logo: hosted_logos/idsa.svg
+          - name: Skaffold
+            homepage_url: https://skaffold.dev/
+            logo: hosted_logos/idsa.svg
+          - name: Porter
+            homepage_url: https://porter.sh/
+            logo: hosted_logos/idsa.svg
+
+      - name: Continuous Integration & Delivery
         items:
-          - name: IDSA
-            homepage_url: https://internationaldataspaces.org
+          - name: Argo
+            homepage_url: https://argoproj.github.io/
             logo: hosted_logos/idsa.svg
-            description: The International Data Spaces Association
-          - name: DFKI
-            homepage_url: https://www.dfki.de
+          - name: Flux
+            homepage_url: https://fluxcd.io/
             logo: hosted_logos/idsa.svg
-            description: German Research Center for AI
+          - name: Tekton
+            homepage_url: https://tekton.dev/
+            logo: hosted_logos/idsa.svg
+          - name: Jenkins
+            homepage_url: https://www.jenkins.io/
+            logo: hosted_logos/idsa.svg
+          - name: GitLab CI/CD
+            homepage_url: https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/
+            logo: hosted_logos/idsa.svg
+          - name: GitHub Actions
+            homepage_url: https://github.com/features/actions
+            logo: hosted_logos/idsa.svg
+          - name: CircleCI
+            homepage_url: https://circleci.com/
+            logo: hosted_logos/idsa.svg
+          - name: Concourse
+            homepage_url: https://concourse-ci.org/
+            logo: hosted_logos/idsa.svg
+          - name: Bamboo
+            homepage_url: https://www.atlassian.com/software/bamboo
+            logo: hosted_logos/idsa.svg
+          - name: Spinnaker
+            homepage_url: https://spinnaker.io/
+            logo: hosted_logos/idsa.svg
+
+      - name: Source Code Management
+        items:
+          - name: GitHub
+            homepage_url: https://github.com/
+            logo: hosted_logos/idsa.svg
+          - name: GitLab
+            homepage_url: https://gitlab.com/
+            logo: hosted_logos/idsa.svg
+          - name: Bitbucket
+            homepage_url: https://bitbucket.org/
+            logo: hosted_logos/idsa.svg
+          - name: Azure Repos
+            homepage_url: https://azure.microsoft.com/en-us/services/devops/repos/
+            logo: hosted_logos/idsa.svg
+          - name: Gitea
+            homepage_url: https://gitea.io/
+            logo: hosted_logos/idsa.svg
+          - name: Gogs
+            homepage_url: https://gogs.io/
+            logo: hosted_logos/idsa.svg
+          - name: Phabricator
+            homepage_url: https://phacility.com/phabricator/
+            logo: hosted_logos/idsa.svg
+          - name: Sourcehut
+            homepage_url: https://sourcehut.org/
+            logo: hosted_logos/idsa.svg
+
+      - name: Observability & Analysis
+        items:
+          - name: Prometheus
+            homepage_url: https://prometheus.io/
+            logo: hosted_logos/idsa.svg
+          - name: Grafana
+            homepage_url: https://grafana.com/
+            logo: hosted_logos/idsa.svg
+          - name: Elasticsearch
+            homepage_url: https://www.elastic.co/
+            logo: hosted_logos/idsa.svg
+          - name: Kibana
+            homepage_url: https://www.elastic.co/kibana
+            logo: hosted_logos/idsa.svg
+          - name: Loki
+            homepage_url: https://grafana.com/oss/loki/
+            logo: hosted_logos/idsa.svg
+          - name: OpenTelemetry
+            homepage_url: https://opentelemetry.io/
+            logo: hosted_logos/idsa.svg
+          - name: Jaeger
+            homepage_url: https://www.jaegertracing.io/
+            logo: hosted_logos/idsa.svg
+          - name: Zipkin
+            homepage_url: https://zipkin.io/
+            logo: hosted_logos/idsa.svg
+          - name: Fluentd
+            homepage_url: https://www.fluentd.org/
+            logo: hosted_logos/idsa.svg
+          - name: Cortex
+            homepage_url: https://cortexmetrics.io/
+            logo: hosted_logos/idsa.svg
+
+      - name: Security & Policy
+        items:
+          - name: Falco
+            homepage_url: https://falco.org/
+            logo: hosted_logos/idsa.svg
+          - name: Open Policy Agent
+            homepage_url: https://www.openpolicyagent.org/
+            logo: hosted_logos/idsa.svg
+          - name: Kyverno
+            homepage_url: https://kyverno.io/
+            logo: hosted_logos/idsa.svg
+          - name: Trivy
+            homepage_url: https://aquasecurity.github.io/trivy/
+            logo: hosted_logos/idsa.svg
+          - name: Notary
+            homepage_url: https://notaryproject.dev/
+            logo: hosted_logos/idsa.svg
+          - name: The Update Framework (TUF)
+            homepage_url: https://theupdateframework.io/
+            logo: hosted_logos/idsa.svg
+          - name: SPIFFE
+            homepage_url: https://spiffe.io/
+            logo: hosted_logos/idsa.svg
+          - name: SPIRE
+            homepage_url: https://spiffe.io/spire/
+            logo: hosted_logos/idsa.svg
