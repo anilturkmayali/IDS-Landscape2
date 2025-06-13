@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [solid()],
   build: {
-    outDir: "dist", // ✅ match this to Netlify
-  },
+    outDir: "dist"
+  }
 });
