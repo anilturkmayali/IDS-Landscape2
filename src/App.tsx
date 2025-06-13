@@ -12,7 +12,10 @@ const App: Component = () => {
           src="/hosted_logos/idsa.svg"
           alt="IDSA Logo"
           class="mb-3"
-          style={{ height: "40px", objectFit: "contain" }}
+          style={{
+            height: "32px",
+            objectFit: "contain",
+          }}
         />
         <h1 class="display-4">IDSA Landscape</h1>
         <p class="lead text-muted">
@@ -20,7 +23,7 @@ const App: Component = () => {
         </p>
       </header>
 
-      {/* Dynamic Sections */}
+      {/* Content */}
       <Show when={landscape()}>
         <For each={landscape()!.landscape}>
           {(cat: any) => (
@@ -31,30 +34,43 @@ const App: Component = () => {
                 {(sub: any) => (
                   <div class="mb-4">
                     <h3 class="h5 text-info mb-3">{sub.name}</h3>
-
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                       <For each={sub.items}>
                         {(item: any) => (
                           <div class="col">
-                            <div class="card h-100 border-0 shadow-sm position-relative">
-                              <div class="card-body text-center">
-                                <img
-                                  src={`/${item.logo}`}
-                                  alt={item.name}
-                                  class="img-fluid mb-2"
-                                  style={{ maxHeight: "48px" }}
-                                />
-                                <h6 class="card-title">
-                                  <a
-                                    href={item.homepage_url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    class="stretched-link text-decoration-none text-dark"
-                                  >
-                                    {item.name}
-                                  </a>
-                                </h6>
-                              </div>
+                            <div
+                              class="card h-100 border-0 shadow-sm text-center p-3"
+                              style={{ transition: "transform 0.2s" }}
+                              onMouseOver={(e) =>
+                                ((e.currentTarget as HTMLDivElement).style.transform =
+                                  "scale(1.05)")
+                              }
+                              onMouseOut={(e) =>
+                                ((e.currentTarget as HTMLDivElement).style.transform =
+                                  "scale(1)")
+                              }
+                            >
+                              <img
+                                src={`/${item.logo}`}
+                                alt={item.name}
+                                class="mx-auto d-block mb-2"
+                                style={{
+                                  maxHeight: "32px",
+                                  width: "auto",
+                                  objectFit: "contain",
+                                }}
+                              />
+                              <h6 class="card-title mt-2">
+                                <a
+                                  href={item.homepage_url}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  class="stretched-link text-decoration-none text-dark"
+                                  style={{ fontWeight: "600", fontSize: "0.9rem" }}
+                                >
+                                  {item.name}
+                                </a>
+                              </h6>
                             </div>
                           </div>
                         )}
