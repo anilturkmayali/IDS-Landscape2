@@ -1,10 +1,25 @@
 landscape:
-  - category: "Members"
+  - name: Connectors
     subcategories:
-      - subcategory: "Founding Members"
+      - name: Certified
         items:
-          - name: "IDSA"
-            homepage_url: "https://internationaldataspaces.org"
-            logo: "idsa.svg"
-            twitter: "IDSA_Community"
-            crunchbase: "https://www.crunchbase.com/organization/international-data-spaces-association"
+          - name: TNO Connector
+            homepage_url: https://www.tno.nl
+            logo: hosted_logos/idsa.svg
+            description: Certified connector by TNO.
+          - name: Fraunhofer Connector
+            homepage_url: https://www.fraunhofer.de
+            logo: hosted_logos/idsa.svg
+            description: Production-ready connector.
+  - name: Participants
+    subcategories:
+      - name: Founding Members
+        items:
+          - name: IDSA
+            homepage_url: https://internationaldataspaces.org
+            logo: hosted_logos/idsa.svg
+            description: The International Data Spaces Association
+          - name: DFKI
+            homepage_url: https://www.dfki.de
+            logo: hosted_logos/idsa.svg
+            description: German Research Center for AI
