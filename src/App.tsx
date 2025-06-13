@@ -20,7 +20,7 @@ const App: Component = () => {
             marginBottom: "1rem"
           }}
         />
-        <h1 style={{ fontSize: "2.4rem", color: "#333" }}>IDSA Landscape</h1>
+        <h1 style={{ fontSize: "2.4rem", color: "#222", margin: 0 }}>IDSA Landscape</h1>
         <p style={{ fontSize: "1rem", color: "#555" }}>
           CNCF-style directory of data space technologies and organizations
         </p>
@@ -33,7 +33,9 @@ const App: Component = () => {
               <h2 style={{
                 fontSize: "1.8rem",
                 color: "#0b4f6c",
-                marginBottom: "1rem"
+                marginBottom: "1rem",
+                borderBottom: "2px solid #eee",
+                paddingBottom: "0.5rem"
               }}>{category.name}</h2>
 
               <For each={category.subcategories}>
@@ -52,30 +54,33 @@ const App: Component = () => {
                     }}>
                       <For each={sub.items}>
                         {(item: any) => (
-                          <div style={{
-                            backgroundColor: "#fff",
-                            borderRadius: "10px",
-                            padding: "1rem",
-                            textAlign: "center",
-                            boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
-                            transition: "transform 0.2s",
-                          }}>
-                          <img
-                          src={item.logo}
-                          alt={item.name}
-                          style={{
-                            maxHeight: "60px",
-                            maxWidth: "120px",
-                            objectFit: "contain",
-                            verticalAlign: "middle",
-                            marginRight: "10px",
-                            background: "white",
-                            padding: "5px",
-                            border: "1px solid #ccc",
-                            borderRadius: "6px"
-                          }}
-                        />
-                            
+                          <div
+                            style={{
+                              backgroundColor: "#fff",
+                              borderRadius: "10px",
+                              padding: "1rem",
+                              textAlign: "center",
+                              boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+                              transition: "transform 0.2s",
+                              cursor: "pointer"
+                            }}
+                            onMouseOver={(e) => {
+                              (e.currentTarget as HTMLDivElement).style.transform = "scale(1.03)";
+                            }}
+                            onMouseOut={(e) => {
+                              (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
+                            }}
+                          >
+                            <img
+                              src={item.logo}
+                              alt={item.name}
+                              style={{
+                                maxHeight: "60px",
+                                maxWidth: "120px",
+                                objectFit: "contain",
+                                marginBottom: "10px"
+                              }}
+                            />
                             <div>
                               <a
                                 href={item.homepage_url}
