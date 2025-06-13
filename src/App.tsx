@@ -7,17 +7,21 @@ const App: Component = () => {
   return (
     <main style={{
       fontFamily: "'Segoe UI', sans-serif",
-      padding: "2rem",
-      background: "#f5f7fa"
+      background: "#f8fafc",
+      padding: "2rem"
     }}>
       <header style={{ textAlign: "center", marginBottom: "3rem" }}>
         <img
           src="/hosted_logos/idsa.svg"
           alt="IDSA Logo"
-          style={{ height: "48px", marginBottom: "1rem" }}
+          style={{
+            maxHeight: "48px",
+            objectFit: "contain",
+            marginBottom: "1rem"
+          }}
         />
-        <h1 style={{ fontSize: "2.5rem", color: "#333" }}>IDSA Landscape</h1>
-        <p style={{ fontSize: "1.1rem", color: "#666" }}>
+        <h1 style={{ fontSize: "2.4rem", color: "#333" }}>IDSA Landscape</h1>
+        <p style={{ fontSize: "1rem", color: "#555" }}>
           CNCF-style directory of data space technologies and organizations
         </p>
       </header>
@@ -28,54 +32,59 @@ const App: Component = () => {
             <section style={{ marginBottom: "3rem" }}>
               <h2 style={{
                 fontSize: "1.8rem",
-                borderBottom: "2px solid #ccc",
-                paddingBottom: "0.4rem",
-                color: "#004080"
+                color: "#0b4f6c",
+                marginBottom: "1rem"
               }}>{category.name}</h2>
 
               <For each={category.subcategories}>
                 {(sub: any) => (
-                  <div style={{ marginTop: "1.5rem" }}>
-                    <h3 style={{ fontSize: "1.3rem", color: "#0066cc" }}>{sub.name}</h3>
+                  <div style={{ marginBottom: "2rem" }}>
+                    <h3 style={{
+                      fontSize: "1.3rem",
+                      color: "#1c6ea4",
+                      marginBottom: "1rem"
+                    }}>{sub.name}</h3>
+
                     <div style={{
                       display: "grid",
-                      gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-                      gap: "1.25rem",
-                      marginTop: "1rem"
+                      gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+                      gap: "1.5rem"
                     }}>
                       <For each={sub.items}>
                         {(item: any) => (
                           <div style={{
-                            border: "1px solid #ddd",
-                            borderRadius: "12px",
-                            padding: "1rem",
                             backgroundColor: "#fff",
-                            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
-                            textAlign: "center"
+                            borderRadius: "10px",
+                            padding: "1rem",
+                            textAlign: "center",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+                            transition: "transform 0.2s",
                           }}>
                             <img
                               src={`/${item.logo}`}
                               alt={item.name}
                               style={{
-                                maxWidth: "120px",
-                                maxHeight: "48px",
-                                marginBottom: "1rem",
+                                maxHeight: "50px",
+                                maxWidth: "100%",
+                                marginBottom: "0.75rem",
                                 objectFit: "contain"
                               }}
                             />
-                            <h4 style={{ fontSize: "1rem", margin: "0.5rem 0" }}>
+                            <div>
                               <a
                                 href={item.homepage_url}
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ textDecoration: "none", color: "#004080" }}
+                                style={{
+                                  textDecoration: "none",
+                                  color: "#0b4f6c",
+                                  fontWeight: "bold",
+                                  fontSize: "0.95rem"
+                                }}
                               >
                                 {item.name}
                               </a>
-                            </h4>
-                            <p style={{ fontSize: "0.85rem", color: "#555" }}>
-                              {item.description || "No description available."}
-                            </p>
+                            </div>
                           </div>
                         )}
                       </For>
