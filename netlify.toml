@@ -1,5 +1,11 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
-
-
+  command = """
+    curl -sSfL https://github.com/cncf/landscape2/releases/latest/download/landscape2-installer.sh | sh && \
+    landscape2 build \
+      --data-file landscape.yml \
+      --settings-file settings.yml \
+      --logos-path hosted_logos \
+      --output-dir public && \
+    cp public/index.css public/index.js ./
+  """
+  publish = "."
