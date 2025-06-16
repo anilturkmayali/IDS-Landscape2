@@ -1,0 +1,55 @@
+landscape:
+  - name: Solutions
+    subcategories:
+      - name: All Solutions
+        items:
+          - name: "Data Hub"
+            homepage_url: "https://example.com/data-hub"
+            logo: "hosted_logos/data-hub.svg"
+          - name: "Analytics Engine"
+            homepage_url: "https://example.com/analytics-engine"
+            logo: "hosted_logos/analytics-engine.svg"
+
+  - name: Solution Providers
+    subcategories:
+      - name: All Solution Providers
+        items:
+          - name: "Provider One"
+            homepage_url: "https://provider.one"
+            logo: "hosted_logos/provider-one.svg"
+          - name: "Provider Two"
+            homepage_url: "https://provider.two"
+            logo: "hosted_logos/provider-two.svg"
+
+  - name: Data Space Solutions
+    subcategories:
+      - name: All Data Space Solutions
+        items:
+          - name: "Space Connector"
+            homepage_url: "https://example.com/space-connector"
+            logo: "hosted_logos/space-connector.svg"
+          - name: "Secure Transfer"
+            homepage_url: "https://example.com/secure-transfer"
+            logo: "hosted_logos/secure-transfer.svg"
+
+  - name: Implementation Partners
+    subcategories:
+      - name: All Implementation Partners
+        items:
+          - name: "Partner A"
+            homepage_url: "https://partner.a"
+            logo: "hosted_logos/partner-a.svg"
+          - name: "Partner B"
+            homepage_url: "https://partner.b"
+            logo: "hosted_logos/partner-b.svg"
+
+  - name: Members
+    subcategories:
+      - name: All Members
+        items:
+          - name: "Member Corp"
+            homepage_url: "https://member.corp"
+            logo: "hosted_logos/member-corp.svg"
+          - name: "Member Org"
+            homepage_url: "https://member.org"
+            logo: "hosted_logos/member-org.svg"
