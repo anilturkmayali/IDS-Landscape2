@@ -1,155 +1,55 @@
 landscape:
-  - name: Projects and products
+  - name: Solutions
     subcategories:
-      - name: Application Definition & Image Build
+      - name: All Solutions
         items:
-          - name: Dapr
-            homepage_url: https://dapr.io/
-            logo: hosted_logos/idsa.svg
-          - name: Helm
-            homepage_url: https://helm.sh/
-            logo: hosted_logos/idsa.svg
-          - name: Artifact Hub
-            homepage_url: https://artifacthub.io/
-            logo: hosted_logos/idsa.svg
-          - name: Backstage
-            homepage_url: https://backstage.io/
-            logo: hosted_logos/idsa.svg
-          - name: Buildpacks.io
-            homepage_url: https://buildpacks.io/
-            logo: hosted_logos/idsa.svg
-          - name: KubeVela
-            homepage_url: https://kubevela.io/
-            logo: hosted_logos/idsa.svg
-          - name: Carvel
-            homepage_url: https://carvel.dev/
-            logo: hosted_logos/idsa.svg
-          - name: Kustomize
-            homepage_url: https://kustomize.io/
-            logo: hosted_logos/idsa.svg
-          - name: Skaffold
-            homepage_url: https://skaffold.dev/
-            logo: hosted_logos/idsa.svg
-          - name: Porter
-            homepage_url: https://porter.sh/
-            logo: hosted_logos/idsa.svg
+          - name: "Data Hub"
+            homepage_url: "https://example.com/data-hub"
+            logo: "hosted_logos/data-hub.svg"
+          - name: "Analytics Engine"
+            homepage_url: "https://example.com/analytics-engine"
+            logo: "hosted_logos/analytics-engine.svg"
 
-      - name: Continuous Integration & Delivery
+  - name: Solution Providers
+    subcategories:
+      - name: All Solution Providers
         items:
-          - name: Argo
-            homepage_url: https://argoproj.github.io/
-            logo: hosted_logos/idsa.svg
-          - name: Flux
-            homepage_url: https://fluxcd.io/
-            logo: hosted_logos/idsa.svg
-          - name: Tekton
-            homepage_url: https://tekton.dev/
-            logo: hosted_logos/idsa.svg
-          - name: Jenkins
-            homepage_url: https://www.jenkins.io/
-            logo: hosted_logos/idsa.svg
-          - name: GitLab CI/CD
-            homepage_url: https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/
-            logo: hosted_logos/idsa.svg
-          - name: GitHub Actions
-            homepage_url: https://github.com/features/actions
-            logo: hosted_logos/idsa.svg
-          - name: CircleCI
-            homepage_url: https://circleci.com/
-            logo: hosted_logos/idsa.svg
-          - name: Concourse
-            homepage_url: https://concourse-ci.org/
-            logo: hosted_logos/idsa.svg
-          - name: Bamboo
-            homepage_url: https://www.atlassian.com/software/bamboo
-            logo: hosted_logos/idsa.svg
-          - name: Spinnaker
-            homepage_url: https://spinnaker.io/
-            logo: hosted_logos/idsa.svg
+          - name: "Provider One"
+            homepage_url: "https://provider.one"
+            logo: "hosted_logos/provider-one.svg"
+          - name: "Provider Two"
+            homepage_url: "https://provider.two"
+            logo: "hosted_logos/provider-two.svg"
 
-      - name: Source Code Management
+  - name: Data Space Solutions
+    subcategories:
+      - name: All Data Space Solutions
         items:
-          - name: GitHub
-            homepage_url: https://github.com/
-            logo: hosted_logos/idsa.svg
-          - name: GitLab
-            homepage_url: https://gitlab.com/
-            logo: hosted_logos/idsa.svg
-          - name: Bitbucket
-            homepage_url: https://bitbucket.org/
-            logo: hosted_logos/idsa.svg
-          - name: Azure Repos
-            homepage_url: https://azure.microsoft.com/en-us/services/devops/repos/
-            logo: hosted_logos/idsa.svg
-          - name: Gitea
-            homepage_url: https://gitea.io/
-            logo: hosted_logos/idsa.svg
-          - name: Gogs
-            homepage_url: https://gogs.io/
-            logo: hosted_logos/idsa.svg
-          - name: Phabricator
-            homepage_url: https://phacility.com/phabricator/
-            logo: hosted_logos/idsa.svg
-          - name: Sourcehut
-            homepage_url: https://sourcehut.org/
-            logo: hosted_logos/idsa.svg
+          - name: "Space Connector"
+            homepage_url: "https://example.com/space-connector"
+            logo: "hosted_logos/space-connector.svg"
+          - name: "Secure Transfer"
+            homepage_url: "https://example.com/secure-transfer"
+            logo: "hosted_logos/secure-transfer.svg"
 
-      - name: Observability & Analysis
+  - name: Implementation Partners
+    subcategories:
+      - name: All Implementation Partners
         items:
-          - name: Prometheus
-            homepage_url: https://prometheus.io/
-            logo: hosted_logos/idsa.svg
-          - name: Grafana
-            homepage_url: https://grafana.com/
-            logo: hosted_logos/idsa.svg
-          - name: Elasticsearch
-            homepage_url: https://www.elastic.co/
-            logo: hosted_logos/idsa.svg
-          - name: Kibana
-            homepage_url: https://www.elastic.co/kibana
-            logo: hosted_logos/idsa.svg
-          - name: Loki
-            homepage_url: https://grafana.com/oss/loki/
-            logo: hosted_logos/idsa.svg
-          - name: OpenTelemetry
-            homepage_url: https://opentelemetry.io/
-            logo: hosted_logos/idsa.svg
-          - name: Jaeger
-            homepage_url: https://www.jaegertracing.io/
-            logo: hosted_logos/idsa.svg
-          - name: Zipkin
-            homepage_url: https://zipkin.io/
-            logo: hosted_logos/idsa.svg
-          - name: Fluentd
-            homepage_url: https://www.fluentd.org/
-            logo: hosted_logos/idsa.svg
-          - name: Cortex
-            homepage_url: https://cortexmetrics.io/
-            logo: hosted_logos/idsa.svg
+          - name: "Partner A"
+            homepage_url: "https://partner.a"
+            logo: "hosted_logos/partner-a.svg"
+          - name: "Partner B"
+            homepage_url: "https://partner.b"
+            logo: "hosted_logos/partner-b.svg"
 
-      - name: Security & Policy
+  - name: Members
+    subcategories:
+      - name: All Members
         items:
-          - name: Falco
-            homepage_url: https://falco.org/
-            logo: hosted_logos/idsa.svg
-          - name: Open Policy Agent
-            homepage_url: https://www.openpolicyagent.org/
-            logo: hosted_logos/idsa.svg
-          - name: Kyverno
-            homepage_url: https://kyverno.io/
-            logo: hosted_logos/idsa.svg
-          - name: Trivy
-            homepage_url: https://aquasecurity.github.io/trivy/
-            logo: hosted_logos/idsa.svg
-          - name: Notary
-            homepage_url: https://notaryproject.dev/
-            logo: hosted_logos/idsa.svg
-          - name: The Update Framework (TUF)
-            homepage_url: https://theupdateframework.io/
-            logo: hosted_logos/idsa.svg
-          - name: SPIFFE
-            homepage_url: https://spiffe.io/
-            logo: hosted_logos/idsa.svg
-          - name: SPIRE
-            homepage_url: https://spiffe.io/spire/
-            logo: hosted_logos/idsa.svg
+          - name: "Member Corp"
+            homepage_url: "https://member.corp"
+            logo: "hosted_logos/member-corp.svg"
+          - name: "Member Org"
+            homepage_url: "https://member.org"
+            logo: "hosted_logos/member-org.svg"
