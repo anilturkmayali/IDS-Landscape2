@@ -1,11 +1,10 @@
-# settings.yml
 site:
   title: "IDSA Landscape"
   favicon: "/images/favicon.ico"
 
 header:
-  logo: "/images/idsa_logo.svg"
-  logo_link: "https://github.com/International-Data-Spaces-Association"
+  logo:       "/images/idsa_logo.svg"
+  logo_link:  "https://github.com/International-Data-Spaces-Association"
   logo_height: "40"
 
 colors:
