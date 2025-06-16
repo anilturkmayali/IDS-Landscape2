@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>IDSA Landscape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 1) Bootstrap (optional, but you can include if you want) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <!-- favicon (from settings.yml) -->
+    <link rel="icon" href="/images/favicon.ico" />
 
-    <!-- 2) CNCF Landscape overrides -->
+    <!-- the CNCF‐Landscape CSS bundle -->
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- mount point for the landscape2 app -->
+    <div id="landscape-root"></div>
+
+    <!-- the CNCF‐Landscape JS bundle -->
+    <script src="/index.js"></script>
   </body>
 </html>
